@@ -1,0 +1,81 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sleep and Exercise | Sleep Calculator</title>
+<meta name="description" content="How exercise improves sleep, the best time of day to train, and why late-night workouts can keep you awake.">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<style>
+body{font-family:'Trebuchet MS',Verdana,sans-serif;color:#e2e8f0;background:#0f172a}
+a{color:#a5b4fc}header{background:#1e1b4b;color:#fff;padding:18px 0;border-bottom:1px solid #3730a3}
+.header-in{max-width:1020px;margin:0 auto;padding:0 20px;text-align:center}
+.logo{font-size:clamp(24px,5vw,30px);font-weight:700;color:#fff;text-decoration:none}
+.logo span{color:#a5b4fc}
+nav{margin-top:8px}nav a{color:#c7d2fe;margin:0 10px;font-weight:600;font-size:15px;text-decoration:none}
+nav a:hover{color:#fff;text-decoration:underline}
+.hero{background:radial-gradient(ellipse at top,#312e81,#0f172a);color:#fff;padding:clamp(30px,6vw,54px) 20px 44px;text-align:center}
+.hero h1{font-size:clamp(28px,6vw,40px);line-height:1.2;margin:0 0 10px}
+.hero p{font-size:clamp(15px,3vw,18px);max-width:620px;margin:0 auto 22px;color:#c7d2fe}
+.calc{background:#1e293b;color:#e2e8f0;max-width:580px;margin:0 auto;padding:clamp(18px,4vw,28px);border-radius:16px;box-shadow:0 14px 34px rgba(0,0,0,.5);text-align:left;border:1px solid #3730a3}
+.calc h2{font-size:20px;margin:0 0 14px;color:#a5b4fc}
+.calc input,.calc select{background:#0f172a;color:#e2e8f0;border-color:#475569}
+.field{margin-bottom:14px}.field label{display:block;font-size:14px;font-weight:700;margin-bottom:5px;color:#c7d2fe}
+.btn{background:#4f46e5;color:#fff}.btn:hover{background:#4338ca}
+.result{background:#312e81;border:1px solid #6366f1;color:#e0e7ff}
+.card{background:#1e293b;border:1px solid #334155;border-radius:14px;padding:22px;margin-bottom:20px}
+.card p,.card li{color:#cbd5e1}
+.acard{background:#1e293b;border:1px solid #334155}
+.acard h3 a{color:#e0e7ff;text-decoration:none}.acard p{color:#94a3b8}
+.toolgrid a{background:#1e293b;border:1px solid #334155;color:#e0e7ff}
+.toolgrid a:hover{border-color:#6366f1;background:#312e81}
+.tip{background:#312e81;border-left:4px solid #818cf8;color:#e0e7ff}
+h1,h2{color:#e0e7ff}h2{color:#a5b4fc}
+footer{color:#94a3b8;font-size:14px;margin-top:30px;padding:20px 0;text-align:center}
+section p{color:#cbd5e1}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;line-height:1.65;font-size:16px}
+img{max-width:100%;height:auto}
+input,select,textarea,button{font-family:inherit;font-size:16px}
+input,select{width:100%;min-height:44px;padding:11px 12px;border:1px solid #cbd5e1;border-radius:8px}
+button,.btn{min-height:44px;padding:12px 22px;border:0;border-radius:8px;font-size:16px;font-weight:700;cursor:pointer;text-decoration:none;display:inline-block;text-align:center}
+.wrap{max-width:1020px;margin:0 auto;padding:0 20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px}
+.acard{overflow:hidden;border-radius:12px}
+.acard img{width:100%;height:160px;object-fit:cover;display:block}
+.acard div{padding:14px}
+.acard h3{margin:0 0 6px;font-size:16px;line-height:1.35}
+.acard p{margin:0;font-size:14px}
+.toolgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px}
+.toolgrid a{padding:18px;border-radius:12px;text-decoration:none;display:block;font-weight:700}
+.result{padding:16px;border-radius:10px;margin-top:16px}
+.result .big{font-size:clamp(22px,5vw,28px);font-weight:800}
+.tip{padding:14px 16px;border-radius:10px;margin:18px 0}
+.faq h3{font-size:16px;margin:18px 0 4px}
+article img.heroimg{width:100%;max-height:380px;object-fit:cover;border-radius:12px;display:block}
+@media(max-width:640px){
+  .wrap{padding:0 14px}
+  .grid,.toolgrid{grid-template-columns:1fr}
+  .acard img{height:180px}
+  nav a{margin:0 6px}
+}
+@media(max-width:480px){
+  body{font-size:16px}
+  .wrap{padding:0 12px}
+  h1{font-size:26px !important}
+  .btn,button{width:100%}
+  .acard img{height:170px}
+}
+</style></head>
+<body><header><div class="header-in"><a class="logo" href="../index.html">Sleep Calculator</a><nav><a href="../index.html">Home</a><a href="../tools/sleep-calculator.html">Calculator</a><a href="../about.html">About</a><a href="../contact.html">Contact</a></nav></div></header><main class="wrap"><article class="card" style="margin-top:20px"><img class="heroimg" src="../images/sleep-and-exercise.jpg" alt="Sleep and Exercise">
+<h1>Sleep and Exercise</h1><p><em>How exercise improves sleep, the best time of day to train, and why late-night workouts can keep you awake.</em></p>
+<p>Exercise is one of the best treatments for poor sleep, and it works through several routes: it tires the body, it raises body temperature and lets it fall afterwards, and it reduces stress and anxiety. But timing matters, because exercise too close to bedtime can keep you awake. This guide explains how exercise helps sleep, when to do it, and how much is enough.</p>
+<h2>How exercise helps sleep</h2><p>Regular exercise shortens the time it takes to fall asleep, increases deep sleep, and reduces night-time awakenings. The effect is strongest for moderate aerobic exercise, such as brisk walking, cycling or swimming, done regularly for several weeks. It also helps mood and anxiety, which are common causes of poor sleep. The improvement is gradual, not instant: most studies find the benefit builds over two to four weeks of regular exercise, so patience matters.</p>
+<h2>The best time to exercise</h2><p>Morning and afternoon exercise are best for sleep. Morning exercise has the added benefit of bright light, which resets the body clock. Afternoon exercise is also good, because the body is warmest and strongest in the late afternoon. Evening exercise is fine for most people if it finishes at least two to three hours before bed, because the body needs time to cool down and the alertness to fade. Very vigorous exercise within an hour of bed is the one timing that commonly disturbs sleep.</p>
+<h2>How much is enough</h2><p>About 150 minutes of moderate exercise a week, or 75 minutes of vigorous exercise, is the usual guidance for general health, and it is also enough to improve sleep. That is roughly 30 minutes on five days a week, and it can be broken into shorter bouts of 10 minutes. Walking counts, and it is the easiest place to start. More exercise helps up to a point, but very intense training, especially twice a day, can disturb sleep through muscle soreness and a raised stress response.</p>
+<h2>Exercise for insomnia</h2><p>For people with insomnia, regular moderate exercise is one of the most effective non-drug treatments, and it works better than sleeping tablets in the long term. The key is regularity: a single workout does little, but a daily walk for a month changes sleep noticeably. Combine exercise with the other basics, a regular schedule, morning light, and no late caffeine, and the effect is larger than any one change alone. If insomnia persists for months despite these steps, see a doctor, because there are effective treatments.</p>
+<h2>What to avoid</h2><p>Avoid vigorous exercise in the last hour before bed, because it raises heart rate, body temperature and alertness. Avoid exercising in a hot room late at night for the same reason. If you can only exercise late, choose gentle activity such as stretching or slow yoga, which relaxes rather than stimulates. And avoid using exercise as a punishment for a bad night: a tired body needs rest, and a gentle walk is better than a hard session when you are already exhausted.</p>
+<h2>A week of exercise for better sleep</h2><p>Take a person who walks briskly for 30 minutes each morning and does a short strength session twice a week. In the first week, the change is small: they fall asleep a little faster, but mornings feel the same. By week three, the difference is clear: they fall asleep within 15 minutes most nights, wake less often, and feel more alert in the morning. The morning walk helps twice, through exercise and through bright light, which resets the clock. The strength sessions help by tiring the body and building muscle. The example shows why exercise is a slow treatment: it works over weeks, not nights, and the benefit builds with regularity rather than intensity.</p>
+<div class="tip"><strong>Tip:</strong> Morning and afternoon exercise are best for sleep. Evening exercise is fine if it finishes at least two to three hours before bed — vigorous exercise in the last hour commonly disturbs sleep.</div>
+<h2>Frequently Asked Questions</h2><div class="faq"><h3>Does exercise help you sleep?</h3><p>Yes. Regular moderate exercise shortens the time to fall asleep, increases deep sleep, and reduces night waking. The benefit builds over two to four weeks.</p><h3>What time of day should I exercise for sleep?</h3><p>Morning or afternoon is best. Evening exercise is fine if it finishes at least two to three hours before bed.</p><h3>How much exercise improves sleep?</h3><p>About 150 minutes of moderate exercise a week, such as 30 minutes of brisk walking on five days.</p></div>
+<h2>Related Guides</h2><ul><li><a href="napping-mistakes.html">Napping Mistakes to Avoid</a></li><li><a href="waking-up-groggy-causes.html">Why You Wake Up Groggy</a></li><li><a href="sleep-debt-explained.html">Sleep Debt Explained</a></li></ul>
+<p><a href="../index.html">&larr; Back to home</a></p></article></main><footer><p>Sleep Calculator — free online calculators and practical guides. <a href="../about.html">About</a> | <a href="../contact.html">Contact</a> | <a href="../privacy.html">Privacy Policy</a> | <a href="../disclaimer.html">Disclaimer</a></p><p>Results are estimates for general information only.</p></footer></body></html>

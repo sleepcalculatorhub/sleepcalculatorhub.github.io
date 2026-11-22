@@ -1,0 +1,81 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Caffeine and Sleep | Sleep Calculator</title>
+<meta name="description" content="How caffeine works, how long it lasts, and when to stop drinking it so it does not ruin your night.">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<style>
+body{font-family:'Trebuchet MS',Verdana,sans-serif;color:#e2e8f0;background:#0f172a}
+a{color:#a5b4fc}header{background:#1e1b4b;color:#fff;padding:18px 0;border-bottom:1px solid #3730a3}
+.header-in{max-width:1020px;margin:0 auto;padding:0 20px;text-align:center}
+.logo{font-size:clamp(24px,5vw,30px);font-weight:700;color:#fff;text-decoration:none}
+.logo span{color:#a5b4fc}
+nav{margin-top:8px}nav a{color:#c7d2fe;margin:0 10px;font-weight:600;font-size:15px;text-decoration:none}
+nav a:hover{color:#fff;text-decoration:underline}
+.hero{background:radial-gradient(ellipse at top,#312e81,#0f172a);color:#fff;padding:clamp(30px,6vw,54px) 20px 44px;text-align:center}
+.hero h1{font-size:clamp(28px,6vw,40px);line-height:1.2;margin:0 0 10px}
+.hero p{font-size:clamp(15px,3vw,18px);max-width:620px;margin:0 auto 22px;color:#c7d2fe}
+.calc{background:#1e293b;color:#e2e8f0;max-width:580px;margin:0 auto;padding:clamp(18px,4vw,28px);border-radius:16px;box-shadow:0 14px 34px rgba(0,0,0,.5);text-align:left;border:1px solid #3730a3}
+.calc h2{font-size:20px;margin:0 0 14px;color:#a5b4fc}
+.calc input,.calc select{background:#0f172a;color:#e2e8f0;border-color:#475569}
+.field{margin-bottom:14px}.field label{display:block;font-size:14px;font-weight:700;margin-bottom:5px;color:#c7d2fe}
+.btn{background:#4f46e5;color:#fff}.btn:hover{background:#4338ca}
+.result{background:#312e81;border:1px solid #6366f1;color:#e0e7ff}
+.card{background:#1e293b;border:1px solid #334155;border-radius:14px;padding:22px;margin-bottom:20px}
+.card p,.card li{color:#cbd5e1}
+.acard{background:#1e293b;border:1px solid #334155}
+.acard h3 a{color:#e0e7ff;text-decoration:none}.acard p{color:#94a3b8}
+.toolgrid a{background:#1e293b;border:1px solid #334155;color:#e0e7ff}
+.toolgrid a:hover{border-color:#6366f1;background:#312e81}
+.tip{background:#312e81;border-left:4px solid #818cf8;color:#e0e7ff}
+h1,h2{color:#e0e7ff}h2{color:#a5b4fc}
+footer{color:#94a3b8;font-size:14px;margin-top:30px;padding:20px 0;text-align:center}
+section p{color:#cbd5e1}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;line-height:1.65;font-size:16px}
+img{max-width:100%;height:auto}
+input,select,textarea,button{font-family:inherit;font-size:16px}
+input,select{width:100%;min-height:44px;padding:11px 12px;border:1px solid #cbd5e1;border-radius:8px}
+button,.btn{min-height:44px;padding:12px 22px;border:0;border-radius:8px;font-size:16px;font-weight:700;cursor:pointer;text-decoration:none;display:inline-block;text-align:center}
+.wrap{max-width:1020px;margin:0 auto;padding:0 20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px}
+.acard{overflow:hidden;border-radius:12px}
+.acard img{width:100%;height:160px;object-fit:cover;display:block}
+.acard div{padding:14px}
+.acard h3{margin:0 0 6px;font-size:16px;line-height:1.35}
+.acard p{margin:0;font-size:14px}
+.toolgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px}
+.toolgrid a{padding:18px;border-radius:12px;text-decoration:none;display:block;font-weight:700}
+.result{padding:16px;border-radius:10px;margin-top:16px}
+.result .big{font-size:clamp(22px,5vw,28px);font-weight:800}
+.tip{padding:14px 16px;border-radius:10px;margin:18px 0}
+.faq h3{font-size:16px;margin:18px 0 4px}
+article img.heroimg{width:100%;max-height:380px;object-fit:cover;border-radius:12px;display:block}
+@media(max-width:640px){
+  .wrap{padding:0 14px}
+  .grid,.toolgrid{grid-template-columns:1fr}
+  .acard img{height:180px}
+  nav a{margin:0 6px}
+}
+@media(max-width:480px){
+  body{font-size:16px}
+  .wrap{padding:0 12px}
+  h1{font-size:26px !important}
+  .btn,button{width:100%}
+  .acard img{height:170px}
+}
+</style></head>
+<body><header><div class="header-in"><a class="logo" href="../index.html">Sleep Calculator</a><nav><a href="../index.html">Home</a><a href="../tools/sleep-calculator.html">Calculator</a><a href="../about.html">About</a><a href="../contact.html">Contact</a></nav></div></header><main class="wrap"><article class="card" style="margin-top:20px"><img class="heroimg" src="../images/caffeine-and-sleep.jpg" alt="Caffeine and Sleep">
+<h1>Caffeine and Sleep</h1><p><em>How caffeine works, how long it lasts, and when to stop drinking it so it does not ruin your night.</em></p>
+<p>Caffeine is the world&#x27;s most popular drug, and it is also one of the most common reasons for poor sleep. It works by blocking the brain&#x27;s sleepiness signal, and it lasts far longer than most people realise. A coffee in the afternoon can still be affecting your sleep at midnight. This guide explains how caffeine works, how long it lasts, and how to use it without it using you.</p>
+<h2>How caffeine works</h2><p>Caffeine blocks adenosine, a chemical that builds up in the brain during the day and signals sleepiness. By blocking it, caffeine makes you feel alert even though the adenosine is still there. When the caffeine wears off, the adenosine is still waiting, which is why tiredness can hit suddenly in the evening. Caffeine does not give you energy; it borrows alertness from later in the day, and the debt comes due at bedtime.</p>
+<h2>How long it lasts</h2><p>Caffeine has a half-life of about five to six hours, which means half of a dose is still in your body five to six hours after you drink it. A coffee at 4 p.m. is therefore still half there at 10 p.m., and a quarter there at 4 a.m. The half-life varies: it is longer in older adults, in people taking certain medicines, and in pregnancy, and shorter in smokers. It is also longer than most people expect, which is why an afternoon coffee can ruin a night even when you felt fine in the evening.</p>
+<h2>How much is in your drinks</h2><p>A mug of brewed coffee has roughly 100 mg of caffeine, an espresso about 60 mg, a cup of black tea about 50 mg, a cup of green tea about 30 mg, and a can of cola about 35 mg. Energy drinks vary widely, from 80 mg to over 200 mg a can. Chocolate has a small amount. The total across the day matters more than any single drink, and a person who drinks coffee all day can easily take in 400 mg or more, which is enough to disturb sleep even if they feel used to it.</p>
+<h2>Setting a cut-off</h2><p>The practical rule is to set a caffeine cut-off and keep it. For most people, that means no caffeine after midday to early afternoon, depending on bedtime. If you go to bed at 11 p.m., a cut-off of 1 p.m. leaves most of the caffeine cleared by bedtime. Switch to decaf or herbal tea after the cut-off, and beware of hidden caffeine in painkillers, chocolate and energy drinks. If you currently drink coffee late, move the cut-off earlier by an hour every few days rather than stopping suddenly, to avoid headaches.</p>
+<h2>Caffeine and sleep quality</h2><p>Even when caffeine does not stop you falling asleep, it makes sleep lighter and reduces deep sleep, so you wake less refreshed. People who drink caffeine late often report that they sleep fine, but measurements show their sleep is more fragmented. If you sleep poorly and drink caffeine after midday, a two-week trial without afternoon caffeine is the simplest test: keep everything else the same, move the cut-off earlier, and see whether your mornings improve.</p>
+<h2>Your caffeine, added up</h2><p>Add up a typical day: a mug of coffee at breakfast, about 100 mg, a second at 10 a.m., another 100 mg, a cup of tea at lunch, about 50 mg, and a coffee at 4 p.m., another 100 mg, for a total of about 350 mg. At 10 p.m., half of the 4 p.m. coffee is still there, about 50 mg, plus smaller amounts of the earlier drinks, so the total in your body at bedtime is roughly 100 mg, equivalent to a full cup of coffee. The arithmetic shows why an afternoon coffee disturbs sleep even when you feel fine: the amount left at bedtime is larger than most people expect. Move the 4 p.m. coffee to midday, and the bedtime total falls to about 50 mg, which is usually low enough to sleep well.</p>
+<div class="tip"><strong>Tip:</strong> Caffeine has a half-life of about 5 to 6 hours — a coffee at 4 p.m. is still half there at 10 p.m., and a quarter there at 4 a.m.</div>
+<h2>Frequently Asked Questions</h2><div class="faq"><h3>How long does caffeine last?</h3><p>About 5 to 6 hours for half of it to clear. A 4 p.m. coffee is still half there at 10 p.m.</p><h3>When should I stop drinking coffee?</h3><p>For most people, no caffeine after midday to early afternoon, depending on bedtime. If you sleep at 11 p.m., a 1 p.m. cut-off is a good start.</p><h3>Does caffeine affect sleep even if I fall asleep fine?</h3><p>Yes. It makes sleep lighter and reduces deep sleep, so you wake less refreshed even when you fall asleep easily.</p></div>
+<h2>Related Guides</h2><ul><li><a href="screens-before-bed.html">Screens Before Bed</a></li><li><a href="sleep-and-exercise.html">Sleep and Exercise</a></li><li><a href="napping-mistakes.html">Napping Mistakes to Avoid</a></li></ul>
+<p><a href="../index.html">&larr; Back to home</a></p></article></main><footer><p>Sleep Calculator — free online calculators and practical guides. <a href="../about.html">About</a> | <a href="../contact.html">Contact</a> | <a href="../privacy.html">Privacy Policy</a> | <a href="../disclaimer.html">Disclaimer</a></p><p>Results are estimates for general information only.</p></footer></body></html>

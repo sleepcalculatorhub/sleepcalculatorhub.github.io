@@ -1,0 +1,81 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sleep Needs by Age | Sleep Calculator</title>
+<meta name="description" content="How much sleep newborns, children, teenagers, adults and older people need, and why the numbers change.">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<style>
+body{font-family:'Trebuchet MS',Verdana,sans-serif;color:#e2e8f0;background:#0f172a}
+a{color:#a5b4fc}header{background:#1e1b4b;color:#fff;padding:18px 0;border-bottom:1px solid #3730a3}
+.header-in{max-width:1020px;margin:0 auto;padding:0 20px;text-align:center}
+.logo{font-size:clamp(24px,5vw,30px);font-weight:700;color:#fff;text-decoration:none}
+.logo span{color:#a5b4fc}
+nav{margin-top:8px}nav a{color:#c7d2fe;margin:0 10px;font-weight:600;font-size:15px;text-decoration:none}
+nav a:hover{color:#fff;text-decoration:underline}
+.hero{background:radial-gradient(ellipse at top,#312e81,#0f172a);color:#fff;padding:clamp(30px,6vw,54px) 20px 44px;text-align:center}
+.hero h1{font-size:clamp(28px,6vw,40px);line-height:1.2;margin:0 0 10px}
+.hero p{font-size:clamp(15px,3vw,18px);max-width:620px;margin:0 auto 22px;color:#c7d2fe}
+.calc{background:#1e293b;color:#e2e8f0;max-width:580px;margin:0 auto;padding:clamp(18px,4vw,28px);border-radius:16px;box-shadow:0 14px 34px rgba(0,0,0,.5);text-align:left;border:1px solid #3730a3}
+.calc h2{font-size:20px;margin:0 0 14px;color:#a5b4fc}
+.calc input,.calc select{background:#0f172a;color:#e2e8f0;border-color:#475569}
+.field{margin-bottom:14px}.field label{display:block;font-size:14px;font-weight:700;margin-bottom:5px;color:#c7d2fe}
+.btn{background:#4f46e5;color:#fff}.btn:hover{background:#4338ca}
+.result{background:#312e81;border:1px solid #6366f1;color:#e0e7ff}
+.card{background:#1e293b;border:1px solid #334155;border-radius:14px;padding:22px;margin-bottom:20px}
+.card p,.card li{color:#cbd5e1}
+.acard{background:#1e293b;border:1px solid #334155}
+.acard h3 a{color:#e0e7ff;text-decoration:none}.acard p{color:#94a3b8}
+.toolgrid a{background:#1e293b;border:1px solid #334155;color:#e0e7ff}
+.toolgrid a:hover{border-color:#6366f1;background:#312e81}
+.tip{background:#312e81;border-left:4px solid #818cf8;color:#e0e7ff}
+h1,h2{color:#e0e7ff}h2{color:#a5b4fc}
+footer{color:#94a3b8;font-size:14px;margin-top:30px;padding:20px 0;text-align:center}
+section p{color:#cbd5e1}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;line-height:1.65;font-size:16px}
+img{max-width:100%;height:auto}
+input,select,textarea,button{font-family:inherit;font-size:16px}
+input,select{width:100%;min-height:44px;padding:11px 12px;border:1px solid #cbd5e1;border-radius:8px}
+button,.btn{min-height:44px;padding:12px 22px;border:0;border-radius:8px;font-size:16px;font-weight:700;cursor:pointer;text-decoration:none;display:inline-block;text-align:center}
+.wrap{max-width:1020px;margin:0 auto;padding:0 20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px}
+.acard{overflow:hidden;border-radius:12px}
+.acard img{width:100%;height:160px;object-fit:cover;display:block}
+.acard div{padding:14px}
+.acard h3{margin:0 0 6px;font-size:16px;line-height:1.35}
+.acard p{margin:0;font-size:14px}
+.toolgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px}
+.toolgrid a{padding:18px;border-radius:12px;text-decoration:none;display:block;font-weight:700}
+.result{padding:16px;border-radius:10px;margin-top:16px}
+.result .big{font-size:clamp(22px,5vw,28px);font-weight:800}
+.tip{padding:14px 16px;border-radius:10px;margin:18px 0}
+.faq h3{font-size:16px;margin:18px 0 4px}
+article img.heroimg{width:100%;max-height:380px;object-fit:cover;border-radius:12px;display:block}
+@media(max-width:640px){
+  .wrap{padding:0 14px}
+  .grid,.toolgrid{grid-template-columns:1fr}
+  .acard img{height:180px}
+  nav a{margin:0 6px}
+}
+@media(max-width:480px){
+  body{font-size:16px}
+  .wrap{padding:0 12px}
+  h1{font-size:26px !important}
+  .btn,button{width:100%}
+  .acard img{height:170px}
+}
+</style></head>
+<body><header><div class="header-in"><a class="logo" href="../index.html">Sleep Calculator</a><nav><a href="../index.html">Home</a><a href="../tools/sleep-calculator.html">Calculator</a><a href="../about.html">About</a><a href="../contact.html">Contact</a></nav></div></header><main class="wrap"><article class="card" style="margin-top:20px"><img class="heroimg" src="../images/sleep-needs-by-age.jpg" alt="Sleep Needs by Age">
+<h1>Sleep Needs by Age</h1><p><em>How much sleep newborns, children, teenagers, adults and older people need, and why the numbers change.</em></p>
+<p>Sleep need changes dramatically across life: a newborn sleeps most of the day, a teenager needs more than an adult, and an older person needs slightly less but often sleeps worse. The numbers are not arbitrary; they reflect what the brain and body are doing at each stage. This guide gives the recommended ranges for each age group and explains why they differ.</p>
+<h2>Babies and young children</h2><p>Newborns sleep 14 to 17 hours a day, in short stretches, because their brains are growing fast and their stomachs are small. Infants of 4 to 11 months need 12 to 15 hours, including naps. Toddlers of 1 to 2 years need 11 to 14 hours, and children of 3 to 5 years need 10 to 13 hours, including a nap. Children of 6 to 13 years need 9 to 11 hours. These are large amounts because growth, learning and brain development all happen during sleep, and a child who is short of sleep shows it quickly in mood, behaviour and learning.</p>
+<h2>Teenagers</h2><p>Teenagers need 8 to 10 hours, more than adults, but their body clock shifts later, so they naturally feel sleepy late at night and groggy early in the morning. This is a biological change, not laziness: the hormone that signals sleepiness is released later in teenagers. Early school starts therefore clash with teenage biology, and many teenagers are chronically short of sleep during the school week. A regular schedule, no screens in the last hour, and a lie-in at the weekend that is not too long are the practical compromises.</p>
+<h2>Adults</h2><p>Adults aged 18 to 64 need 7 to 9 hours, and adults over 65 need 7 to 8 hours. The range is wide because individuals differ, and the right amount is the one that leaves you alert through the day. Young adults often need the upper end of the range, especially if they are active or learning. The need does not fall sharply at 65; what changes is that sleep becomes lighter and more broken, so older adults may need more time in bed to get the same amount of sleep.</p>
+<h2>Older adults</h2><p>Sleep in later life is lighter, with more awakenings and less deep sleep, which is why older adults often wake early and nap in the day. The need is still 7 to 8 hours, but getting it can be harder. Regular daytime light, daily movement, a regular schedule, and treating any pain or health problems that disturb sleep all help. Sleeping tablets are not a good long-term answer, because they can cause confusion and falls. If sleep problems persist, a doctor can help, and there are effective non-drug treatments.</p>
+<h2>What the numbers mean for your family</h2><p>Use the ranges as a guide for bedtimes, not as a strict rule. A child who is alert, growing well and in a good mood is probably getting enough, whatever the exact number. A teenager who falls asleep in class is probably not. An adult who needs caffeine all day is probably not. Work backwards from the wake time using the calculator, and adjust the bedtime until the day feels right. The number that matters is the one that works for the person in front of you.</p>
+<h2>Bedtimes for a family, worked out</h2><p>Take a family that must wake at 7 a.m. A 4-year-old needing 11 hours should be asleep by 8 p.m., so bedtime is about 7:30 p.m. An 8-year-old needing 10 hours should be asleep by 9 p.m., so bedtime is about 8:30 p.m. A 15-year-old needing 9 hours should be asleep by 10 p.m., so bedtime is about 9:30 p.m., though their clock will fight it. The parents, needing 8 hours, should be asleep by 11 p.m. The staggered bedtimes look complicated, but they follow one rule: count backwards from 7 a.m. in 90-minute cycles, add the time to fall asleep, and the bedtime appears. The same rule works for every age, and it is the reason the calculator is useful for a whole household.</p>
+<div class="tip"><strong>Tip:</strong> Teenagers need 8 to 10 hours, but their body clock shifts later — the hormone that signals sleepiness is released later, which is why early school starts clash with teenage biology.</div>
+<h2>Frequently Asked Questions</h2><div class="faq"><h3>How much sleep does a teenager need?</h3><p>8 to 10 hours. Their body clock also shifts later, so they naturally feel sleepy late and groggy early.</p><h3>How much sleep do older adults need?</h3><p>7 to 8 hours. Sleep becomes lighter and more broken with age, so more time in bed may be needed to get it.</p><h3>Do children need more sleep than adults?</h3><p>Yes, much more. A toddler needs 11 to 14 hours and a school-age child 9 to 11 hours, because growth and brain development happen during sleep.</p></div>
+<h2>Related Guides</h2><ul><li><a href="power-nap-guide.html">The Power Nap Guide</a></li><li><a href="fixing-your-sleep-schedule.html">Fixing Your Sleep Schedule</a></li><li><a href="sleep-and-shift-work.html">Sleep and Shift Work</a></li></ul>
+<p><a href="../index.html">&larr; Back to home</a></p></article></main><footer><p>Sleep Calculator — free online calculators and practical guides. <a href="../about.html">About</a> | <a href="../contact.html">Contact</a> | <a href="../privacy.html">Privacy Policy</a> | <a href="../disclaimer.html">Disclaimer</a></p><p>Results are estimates for general information only.</p></footer></body></html>
